@@ -1,7 +1,9 @@
 /* TODO
- *   optimize for mobile:
+ *   optimize for mobile
  *DONE       delte einkaufsliste and bei rewe bestellen button
- * DONE      set Zubereitung directly under zutaten
+ *DONE      set Zubereitung directly under zutaten
+ *       delte einkaufsliste and bei rewe bestellen button
+ *       set Zubereitung directly under zutaten
  *    for recipes in different parts(https://www.chefkoch.de/rezepte/2529831396465550/Pfannkuchen-Crepe-und-Pancake.html):
  *       make parts expandable
  *   optimize for pc:
@@ -14,16 +16,15 @@
 // @name         Better Chefkoch
 // @namespace    https://github.com/WandernderVogel
 // @version      1.0
-// @description  Makes chefkoch on mobile slightly more enjoyable
+// @description  Make the UI of Chefkoch.de better on mobile and PC
 // @author       Wandernder Vogel
-// @match        https://www.chefkoch.de/rezepte*
-// @icon         https://img.chefkoch-cdn.de/favicon.ico
+// @match        https://chefkoch.de/*
+// @icon         https://www.chefkoch.de/favicon.ico
 // @grant        none
 // ==/UserScript==
 
 (function () {
   ("use strict");
-
   // MOBILE
   document.getElementsByClassName("pi-cont")[0].parentElement.innerHTML = "";
   document.getElementsByClassName("ds-hr ")[6].innerHTML = "";
@@ -46,3 +47,4 @@
     '[data-vars-tracking-title="Zubereitung"]'
   )[0].innerHTML = "";
     })();
+
